@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:label="Intro"
+        tools:layout="@layout/fragment_intro"
+        android:name="com.example.livenessdetectionfinalyearproject.IntroFragment"
+        >
+        <action
+            android:id="@+id/action_introFragment_to_signUpNameFragment"
+            app:destination="@id/signUpNameFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpNameFragment"
+        android:name="com.example.livenessdetectionfinalyearproject.SignUpNameFragment"
+        android:label="fragment_sign_up_name"
+        tools:layout="@layout/fragment_sign_up_name" >
+    </fragment>
+
+</navigation>

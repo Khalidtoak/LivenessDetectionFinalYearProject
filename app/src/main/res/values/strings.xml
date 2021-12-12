@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LivenessDetectionFinalYearProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="register_face">Register Face</string>
+    <string name="please_enter_your_username">Please Enter your user name</string>
+    <string name="username">username</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="save">Save</string>
+    <string name="recognize_face">Recognize Face</string>
+    <string name="blinkText">Please blink with both eyes</string>
+    <string name="blink_again_text">Please Blink again</string>
+    <string name="smileText">Please smile to get access</string>
+    <string name="alive_text">You\'re Alive!!</string>
+    <string name="face_registered_successfully">Face Registered Successfully!</string>
+</resources>
