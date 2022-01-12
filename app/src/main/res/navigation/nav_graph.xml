@@ -21,9 +21,9 @@
     </fragment>
     <fragment
         android:id="@+id/signUpNameFragment"
-        android:name="com.example.livenessdetectionfinalyearproject.SignUpNameFragment"
+        android:name="com.example.livenessdetectionfinalyearproject.EnnterUserNameFragment"
         android:label="fragment_sign_up_name"
-        tools:layout="@layout/fragment_sign_up_name" >
+        tools:layout="@layout/fragment_enter_user_name" >
     </fragment>
 
 </navigation>

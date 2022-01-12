@@ -16,7 +16,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import coil.load
-import com.example.livenessdetectionfinalyearproject.SignUpNameFragment.Companion.USER_NAME_PARAM
+import com.example.livenessdetectionfinalyearproject.EnnterUserNameFragment.Companion.USER_NAME_PARAM
 import com.example.livenessdetectionfinalyearproject.base.CameraUtility
 import com.example.livenessdetectionfinalyearproject.base.hide
 import com.example.livenessdetectionfinalyearproject.base.launchActivity
@@ -39,7 +39,7 @@ import java.util.concurrent.Executors
 
 typealias LumaListener = (luma: Double) -> Unit
 
-class SignUpCameraActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
+class RegisterFaceActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
 
     private var imageCapture: ImageCapture? = null
     private lateinit var outputDirectory: File
@@ -125,7 +125,7 @@ class SignUpCameraActivity : AppCompatActivity(), EasyPermissions.PermissionCall
             btnSave.show()
             ivSelectedImage.load(savedUri)
             btnSave.setOnClickListener {
-                FaceDetectionForRegistration(this@SignUpCameraActivity).confirmImageContainsASingleFace(
+                FaceDetectionForRegistration(this@RegisterFaceActivity).confirmImageContainsASingleFace(
                     imageUri = savedUri,
                     onFaceDetected = {
                         if (username.isNotBlank()) {

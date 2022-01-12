@@ -6,10 +6,10 @@ import androidx.fragment.app.Fragment
 import com.example.livenessdetectionfinalyearproject.base.launchActivity
 import com.example.livenessdetectionfinalyearproject.base.toast
 import com.example.livenessdetectionfinalyearproject.base.viewBinding
-import com.example.livenessdetectionfinalyearproject.databinding.FragmentSignUpNameBinding
+import com.example.livenessdetectionfinalyearproject.databinding.FragmentEnterUserNameBinding
 
-class SignUpNameFragment : Fragment(R.layout.fragment_sign_up_name) {
-    private val binding by viewBinding(FragmentSignUpNameBinding::bind)
+class EnnterUserNameFragment : Fragment(R.layout.fragment_enter_user_name) {
+    private val binding by viewBinding(FragmentEnterUserNameBinding::bind)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         binding.apply {
@@ -17,7 +17,7 @@ class SignUpNameFragment : Fragment(R.layout.fragment_sign_up_name) {
                 if (usernameEditText.text.isBlank() || usernameEditText.text.length < 4) {
                     requireContext().toast("User name is too short")?.show()
                 } else {
-                    requireContext().launchActivity(activityClass = SignUpCameraActivity::class.java) {
+                    requireContext().launchActivity(activityClass = RegisterFaceActivity::class.java) {
                         putString(USER_NAME_PARAM, usernameEditText.text.toString().trim())
                     }
                 }

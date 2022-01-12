@@ -20,7 +20,7 @@
             android:name=".RecognizeFaceCameraActivity"
             android:exported="true" />
         <activity
-            android:name=".SignUpCameraActivity"
+            android:name=".RegisterFaceActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
